@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.codepath.apps.restclienttemplate.TimeLineActivity"
+            android:name=".TimeLineActivity"
             android:label="@string/title_activity_time_line" >
         </activity>
     </application>

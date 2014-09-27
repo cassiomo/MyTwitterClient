@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codepath.apps.restclienttemplate"
+    package="com.codepath.apps.basictwitter"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.codepath.apps.restclienttemplate.TimeLineActivity"
+            android:name="com.codepath.apps.basictwitter.TimeLineActivity"
             android:label="@string/title_activity_time_line" >
         </activity>
     </application>

@@ -8,11 +8,17 @@
         revision="20.0.0"
         sha1="f70e680861fdf9449819003e7799a4e9aca047f8"/>
     <item
-        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
-        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/classes-a23d681e63f7e76689f14086ee19c20cd7097ab4.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-703f1ffd5fd935c4b528815d3c7d6879a93d284d.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
     <item
         dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-62b9853288f3c4562beb81c165e8353b023c0a5d.jar"
         jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/scribe-codepath.jar"
@@ -20,17 +26,17 @@
         revision="20.0.0"
         sha1="6e0748acc9e7be0695de0d38016d260df52d9167"/>
     <item
-        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/classes-b86acb79bb1a5c346bf6ad9814d5e3546de6b2e6.jar"
-        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
-    <item
         dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-03ebae83fc489e0af3ce77e69302b28366583179.jar"
         jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/universal-image-loader-1.8.4.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="eee81e43531ce82db1781c5a8b27781ca384eede"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
         dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils-bf90fffb2adebb9b86764b05ff5699d9303b0393.jar"
         jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/codepath-utils.jar"
