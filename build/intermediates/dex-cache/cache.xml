@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.3-c687310f16c5a79e8034de1a7d00ccb075b8b851.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/android-async-http-1.4.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f70e680861fdf9449819003e7799a4e9aca047f8"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-fe930dc68beb1e566675ce71b270d4091c6c249b.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-62b9853288f3c4562beb81c165e8353b023c0a5d.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/scribe-codepath.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6e0748acc9e7be0695de0d38016d260df52d9167"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/classes-b86acb79bb1a5c346bf6ad9814d5e3546de6b2e6.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-03ebae83fc489e0af3ce77e69302b28366583179.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils-bf90fffb2adebb9b86764b05ff5699d9303b0393.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/ActiveAndroid-3.1-adcddac4c58-2b3ba1771a68d65fb9203fdb2c2ea5e17dafad7d.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/ActiveAndroid-3.1-adcddac4c58.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e550c03ed8bcfe3b9f97d8c5ce6e8ee305f3beed"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.3.0-d0f1761acb5071a12acbb33ea1a00495a417270b.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/codepath-oauth-0.3.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b90f1c3541987f690e2fb854775914cc23266250"/>
+
+</pre-dex-items>
