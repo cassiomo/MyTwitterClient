@@ -66,4 +66,15 @@ public class Tweet {
     public User getUser() {
         return user;
     }
+
+    @Override
+    public String toString() {
+//        return "Tweet{" +
+//                "body='" + body + '\'' +
+//                ", uid=" + uid +
+//                ", createdAt='" + createdAt + '\'' +
+//                ", user=" + user +
+//                '}';
+        return getBody() + " - " + getUser().getScreenName();
+    }
 }
