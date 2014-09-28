@@ -26,4 +26,4 @@ Advanced: Improve the user interface and theme the app to feel "twitter branded"
 Bonus: User can see embedded image media within the tweet detail view<br>
 Bonus: Compose activity is replaced with a modal overlay<br>
 
-![Alt text](https://github.com/cassiomo/MyImageSearcher/blob/master/imagesearch.gif "imagesearch.gif")
+![Alt text](https://github.com/cassiomo/MySimpleTwitterClient/blob/master/simpletwitter.gif.gif "simpletwitter.gif.gif")
