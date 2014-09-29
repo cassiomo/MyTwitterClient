@@ -26,15 +26,29 @@ public class TimeLineActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_line);
         client = TwitterApplication.getRestClient();
-        populateTimeline();
+        populateTimeline(0);
         lvTweets = (ListView)findViewById(R.id.lvTweets);
         tweets = new ArrayList<Tweet>();
         //aTweets = new ArrayAdapter<Tweet>(this, android.R.layout.simple_list_item_1, tweets);
         aTweets = new TweetArrayAdapter(this, tweets);
         lvTweets.setAdapter(aTweets);
+        lvTweets.setOnScrollListener(new EndlessScrollListener() {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount) {
+                Tweet last_tweet = tweets.get(tweets.size() - 1);
+                loadMoreTweets(last_tweet.getUid() - 1);
+
+                aTweets.notifyDataSetChanged();
+            }
+        });
+
     }
 
-    public void populateTimeline() {
+    private void loadMoreTweets(long maxId) {
+        populateTimeline(maxId);
+    }
+
+    public void populateTimeline(long maxId) {
         client.getHomeTimeline(new JsonHttpResponseHandler() {
 
             @Override
@@ -48,6 +62,6 @@ public class TimeLineActivity extends Activity {
                Log.d("debug", s.toString());
                Log.d("debug", throwable.toString());
             }
-        });
+        }, maxId);
     }
 }
