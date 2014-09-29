@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,7 +17,7 @@ import java.util.Locale;
 /**
  * Created by kemo on 9/27/14.
  */
-public class Tweet {
+public class Tweet implements Serializable {
 
     private String body;
     private long uid;
@@ -71,6 +72,22 @@ public class Tweet {
 
     public User getUser() {
         return user;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public void setUid(long uid) {
+        this.uid = uid;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override

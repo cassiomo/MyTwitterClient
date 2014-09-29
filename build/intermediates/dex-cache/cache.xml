@@ -38,6 +38,12 @@
         revision="20.0.0"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/classes-f049799cc86542dfdf9f743fdd656eeaeeb52c8e.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/exploded-aar/com.etsy.android.grid/library/1.0.5/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2"/>
+    <item
         dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils-bf90fffb2adebb9b86764b05ff5699d9303b0393.jar"
         jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/libs/codepath-utils.jar"
         jumboMode="false"
@@ -55,5 +61,11 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="b90f1c3541987f690e2fb854775914cc23266250"/>
+    <item
+        dex="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/pre-dexed/debug/classes-7e6626bb8cfc67954b00d13b66f1ec0ccbbc2f6d.jar"
+        jar="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49"/>
 
 </pre-dex-items>

@@ -1,25 +1,31 @@
 package com.codepath.apps.basictwitter;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.codepath.apps.basictwitter.R;
 import com.codepath.apps.basictwitter.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 
 import org.json.JSONArray;
 
 import java.util.ArrayList;
 
-public class TimeLineActivity extends Activity {
+public class TimelineActivity extends SherlockFragmentActivity {
 
     private TwitterClient client;
     private ArrayList<Tweet> tweets;
     private ArrayAdapter<Tweet> aTweets;
     private ListView lvTweets;
+
+    private static int REQUEST_CODE = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,5 +69,17 @@ public class TimeLineActivity extends Activity {
                Log.d("debug", throwable.toString());
             }
         }, maxId);
+    }
+
+    public void onPostTweet(MenuItem mi) {
+        Intent i = new Intent(this, PostTweetActivity.class);
+        startActivityForResult(i, REQUEST_CODE);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }
