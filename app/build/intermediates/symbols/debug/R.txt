@@ -26,3 +26,9 @@ int string title_activity_time_line 0x7f050007
 int string tweet_body 0x7f050008
 int style AppBaseTheme 0x7f060000
 int style AppTheme 0x7f060001
+int style AppThemeNewTweet 0x7f060002
+int style MyActionBar 0x7f060003
+int style MyActionBarNewTweet 0x7f060004
+int style MyActionBarTabText 0x7f060005
+int style MyTheme_ActionBar_Tab 0x7f060006
+int style MyTheme_ActionBar_TitleTextStyle 0x7f060007

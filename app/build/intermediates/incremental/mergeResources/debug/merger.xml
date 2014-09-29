@@ -83,12 +83,20 @@
                 </string>
                 <string name="title_activity_photos" >Flickr Photos
                 </string>
-                <string name="title_activity_time_line" >TimeLineActivity
+                <string name="title_activity_time_line" >Home
                 </string>
             </file>
             <file
                 path="/Users/kemo/AndroidStudioProjects/MySimpleTwitterClient/app/src/main/res/values/styles.xml"
                 qualifiers="" >
+
+                <style
+                    name="MyTheme.ActionBar.TitleTextStyle"
+                    parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" >
+                    <item name="android:textColor">
+#fff
+                    </item>
+                </style>
 
                 <style
                     name="AppBaseTheme"
@@ -102,10 +110,71 @@
                 </style>
 
                 <style
+                    name="MyActionBarTabText"
+                    parent="@android:style/Widget.ActionBar.TabText" >
+                    <item name="android:textColor">
+#55ACEE
+                    </item>
+                    <!-- The textColor property is backward compatible with the Support Library -->
+                </style>
+
+                <style
+                    name="AppThemeNewTweet"
+                    parent="@android:style/Widget.Holo.Light.ActionBar" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                    <item name="android:actionBarStyle">
+@style/MyActionBarNewTweet
+                    </item>
+                    <item name="android:actionMenuTextColor">
+#55ACEE
+                    </item>
+                </style>
+
+                <style
+                    name="MyActionBarNewTweet"
+                    parent="@android:style/Widget.Holo.Light" >
+                    <item name="android:background">
+#fff
+                    </item>
+                    <item name="android:actionMenuTextColor">
+#fff
+                    </item>
+                </style>
+
+                <style
+                    name="MyTheme.ActionBar.Tab"
+                    parent="@android:style/Widget.Holo.ActionBar.TabView" >
+                    <item name="android:background">
+#fff
+                    </item>
+                </style>
+
+                <style
                     name="AppTheme"
                     parent="AppBaseTheme" >
 
                     <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                    <item name="android:actionBarStyle">
+@style/MyActionBar
+                    </item>
+                </style>
+
+                <style
+                    name="MyActionBar"
+                    parent="@android:style/Widget.Holo.Light.ActionBar" >
+                    <item name="android:background">
+#55ACEE
+                    </item>
+                    <item name="android:actionMenuTextColor">
+#fff
+                    </item>
+                    <item name="android:titleTextStyle">
+@style/MyTheme.ActionBar.TitleTextStyle
+                    </item>
+                    <item name="android:actionBarTabTextStyle">
+@style/MyActionBarTabText
+                    </item>
                 </style>
             </file>
             <file

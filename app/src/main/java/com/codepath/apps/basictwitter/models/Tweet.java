@@ -10,6 +10,7 @@ import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
 
 /**
@@ -74,16 +75,10 @@ public class Tweet {
 
     @Override
     public String toString() {
-//        return "Tweet{" +
-//                "body='" + body + '\'' +
-//                ", uid=" + uid +
-//                ", createdAt='" + createdAt + '\'' +
-//                ", user=" + user +
-//                '}';
         return getBody() + " - " + getUser().getScreenName();
     }
     // getRelativeTimeAgo("Mon Apr 01 21:16:23 +0000 2014");
-    public String getRelativeTimeAgo(String rawJsonDate) {
+    public String getRelativeTimeAgo(String rawJsonDate){
         String twitterFormat = "EEE MMM dd HH:mm:ss ZZZZZ yyyy";
         SimpleDateFormat sf = new SimpleDateFormat(twitterFormat, Locale.ENGLISH);
         sf.setLenient(true);
@@ -91,10 +86,24 @@ public class Tweet {
         String relativeDate = "";
         try {
             long dateMillis = sf.parse(rawJsonDate).getTime();
-            relativeDate = DateUtils.getRelativeTimeSpanString(dateMillis,
-                    System.currentTimeMillis(), DateUtils.SECOND_IN_MILLIS).toString();
-        } catch (ParseException e) {
+            relativeDate = DateUtils.getRelativeTimeSpanString(dateMillis, System.currentTimeMillis(), 0L, DateUtils.FORMAT_ABBREV_ALL).toString();
+        } catch (Exception e) {
             e.printStackTrace();
+        }
+
+        HashMap<String, String> replaceMappings = new HashMap<String, String>();
+        replaceMappings.put(" hours ago", "h");
+        replaceMappings.put(" hour ago", "h");
+        replaceMappings.put(" min ago", "m");
+        replaceMappings.put(" mins ago", "m");
+        replaceMappings.put(" seconds ago", "s");
+        replaceMappings.put(" second ago", "s");
+        replaceMappings.put(" day ago", "d");
+        replaceMappings.put(" days ago", "d");
+        for (String suffixKey: replaceMappings.keySet()) {
+            if (relativeDate.endsWith(suffixKey)) {
+                relativeDate = relativeDate.replace(suffixKey, replaceMappings.get(suffixKey));
+            }
         }
 
         return relativeDate;

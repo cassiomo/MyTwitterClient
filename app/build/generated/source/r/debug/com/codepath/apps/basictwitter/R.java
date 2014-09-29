@@ -58,8 +58,14 @@ public final class R {
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f060000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f060001;
+        public static final int AppThemeNewTweet=0x7f060002;
+        public static final int MyActionBar=0x7f060003;
+        public static final int MyActionBarNewTweet=0x7f060004;
+        /**  The textColor property is backward compatible with the Support Library 
+         */
+        public static final int MyActionBarTabText=0x7f060005;
+        public static final int MyTheme_ActionBar_Tab=0x7f060006;
+        public static final int MyTheme_ActionBar_TitleTextStyle=0x7f060007;
     }
 }
