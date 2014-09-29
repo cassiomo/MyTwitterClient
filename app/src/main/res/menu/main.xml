@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     
     <item android:id="@+id/iPostTweet"
-          android:title="iNewStatus"
+          android:title="@string/tweet"
           android:showAsAction="always"
-          android:onClick="onNewStatus"
+          android:onClick="onPostTweet"
           android:icon="@drawable/ic_tweet"/>
 
     <!--
