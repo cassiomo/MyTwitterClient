@@ -11,8 +11,6 @@ import android.widget.TextView;
 import com.codepath.apps.basictwitter.models.Tweet;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
 
 /**
@@ -36,14 +34,18 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
         }
 
         ImageView ivProfileImage = (ImageView) v.findViewById(R.id.ivProfileImage);
-        TextView tvUserName = (TextView) v.findViewById(R.id.tvUserName);
+        TextView tvScreenName = (TextView) v.findViewById((R.id.tvScreenName));
+        TextView tvName = (TextView) v.findViewById(R.id.tvName);
         TextView tvBody = (TextView) v.findViewById(R.id.tvBody);
+        TextView tvCreatedAt = (TextView)v.findViewById(R.id.tvCreateAt);
         //ivProfileImage.setImageResource(android.R.color.transparent);
         ivProfileImage.setImageResource(0);
 
         ImageLoader imageLoader = ImageLoader.getInstance();
         imageLoader.displayImage(tweet.getUser().getProfileImageUrl(), ivProfileImage);
-        tvUserName.setText(tweet.getUser().getScreenName());
+        tvScreenName.setText("@" + tweet.getUser().getScreenName());
+        tvCreatedAt.setText(tweet.getCreatedAt());
+        tvName.setText(tweet.getUser().getName());
         tvBody.setText(tweet.getBody());
         return v;
     }

@@ -15,16 +15,42 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/screen_name"
-        android:id="@+id/tvUserName"
+        android:text="@string/name"
+        android:id="@+id/tvName"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/ivProfileImage" />
+        android:layout_toRightOf="@+id/ivProfileImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_name"
+        android:id="@+id/tvScreenName"
+        android:layout_marginLeft="5dp"
+        android:textColor="#8899a6"
+        android:layout_toRightOf="@+id/tvName" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tweet_body"
         android:id="@+id/tvBody"
-        android:layout_below="@+id/tvUserName"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:focusable="false"
+        android:layout_below="@+id/tvName"
         android:layout_toRightOf="@+id/ivProfileImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvCreateAt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#8899a6"/>
+
 </RelativeLayout>

@@ -13,6 +13,7 @@
     <string name="app_name">MyBasicTwitter</string>
     <string name="hello_world">Hello world!</string>
     <string name="login_label">Connect to Twitter</string>
+    <string name="name">name</string>
     <string name="screen_name">\@foo</string>
     <string name="title_activity_photos">Flickr Photos</string>
     <string name="title_activity_time_line">TimeLineActivity</string>
